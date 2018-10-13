@@ -1,0 +1,8 @@
+---
+- name: Ensure screen is installed
+  yum: name=screen state=present
+
+- name: Copy sql file
+  template: src=export.sql dest={{ doc_root }}/export.sql
+  notify:
+  - Check Apache status

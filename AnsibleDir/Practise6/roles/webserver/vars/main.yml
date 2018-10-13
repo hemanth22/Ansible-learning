@@ -1,0 +1,5 @@
+---
+doc_dir: /html/
+doc_root: /var/www/html/
+max_clients: 5
+username: My name is hemanth

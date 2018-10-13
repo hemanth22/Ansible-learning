@@ -1,0 +1,11 @@
+dc ansible_ssh_host=172.16.57.128
+
+[dataservers]
+dc
+
+[datacenter:children]
+dataservers
+
+[datacenter:vars]
+ansible_ssh_user=hemanth
+ansible_ssh_pass=hemanth

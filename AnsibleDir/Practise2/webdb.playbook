@@ -1,0 +1,7 @@
+---
+- hosts: webservers
+  sudo: yes
+
+  tasks:
+  - name: Ensure sl is installed
+    yum: name=sl state=present

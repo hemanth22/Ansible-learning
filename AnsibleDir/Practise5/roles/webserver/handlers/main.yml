@@ -1,0 +1,3 @@
+---
+- name: Check Apache status
+  shell: sudo systemctl status -l httpd

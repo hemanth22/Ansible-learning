@@ -1,0 +1,14 @@
+---
+- hosts: webservers
+  sudo: yes
+
+  tasks:
+  - name: Check whether kernel is vulnerable or not
+    shell: ./rh-cve-2016-5195_2.sh > output.txt
+    args:
+      chdir: /home/hemanth/Desktop
+      creates: output.txt
+      executable: /bin/bash
+
+  - name: Output of kernel vulnerable
+    shell: cat output.txt

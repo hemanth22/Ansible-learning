@@ -1,0 +1,7 @@
+---
+- host: webservers
+  sudo: yes
+
+  tasks:
+  - name: Show the status
+    shell: systemctl status httpd

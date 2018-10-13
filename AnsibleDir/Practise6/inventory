@@ -1,0 +1,11 @@
+web ansible_ssh_host=172.16.57.132
+
+[webservers]
+web
+
+[datacenter:children]
+webservers
+
+[datacenter:vars]
+ansible_ssh_user=hemanth
+ansible_ssh_pass=hemanth

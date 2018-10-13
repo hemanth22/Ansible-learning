@@ -1,0 +1,15 @@
+web1 ansible_ssh_host=172.16.218.131
+db1 ansible_ssh_host=172.16.10.131
+[webservers]
+web1
+
+[dbservers]
+db1
+
+[datacenter:children]
+webservers
+dbservers
+
+[datacenter:vars]
+ansible_ssh_user=hemanth
+ansible_ssh_pass=hemanth

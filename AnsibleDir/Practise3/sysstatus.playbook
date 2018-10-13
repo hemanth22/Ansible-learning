@@ -1,0 +1,11 @@
+---
+- hosts: webservers
+  sudo: yes
+
+  tasks:
+  - name: get the status of webserver environment
+    shell: systemctl get-default
+
+  tasks:
+  - name: get the status of gitlab environment
+    shell: systemctl status -l gitlab-runsvdir.service
