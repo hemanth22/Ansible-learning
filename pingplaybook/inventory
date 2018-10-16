@@ -1,0 +1,6 @@
+localhost ansible_ssh_host=185.199.111.153
+[webservers]
+localhost
+
+[datacenter:children]
+webservers
